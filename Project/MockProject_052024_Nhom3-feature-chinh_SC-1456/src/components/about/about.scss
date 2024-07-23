@@ -1,0 +1,36 @@
+@import "../../styles/breakpoints.scss";
+
+.about {
+    &-title {
+        color: #052659;
+    }
+
+    &-content {
+        &_heading {
+            font-size: 3.5rem;
+        }
+
+        &_stats {
+            margin-top: 6rem;
+            margin-right: 6rem;
+
+            @include lg {
+                margin-top: 0rem;
+                margin-right: 0rem;
+            }
+        }
+
+        &_stat {
+
+            &--number {
+                color: #2F34A0;
+            }
+        }
+
+        &_img {
+            @include lg {
+                margin: auto;
+            }
+        }
+    }
+}

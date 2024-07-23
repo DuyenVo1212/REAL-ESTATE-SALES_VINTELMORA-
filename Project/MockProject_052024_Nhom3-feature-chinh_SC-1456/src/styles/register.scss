@@ -1,0 +1,34 @@
+.register {
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: #0738CD;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    .form-group {
+
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: bold;
+        }
+
+        .checkbox-role {
+            min-width: 4rem;
+        }
+
+        button[type='submit'] {
+            background-color: #030772;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.header{
+    max-width: 100%;
+    /* max-height: 20vh; */
+    height: 332px;
+    background-image: url(/src/assets/backgroundSC12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+
+    .header-container{
+        // border: 1px solid green;
+        height: 8vh;
+        margin: auto;
+        position: relative;
+        max-width: 96%;
+        top: 19px; 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 17px;
+
+        .logo-header{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+            font-size: 44px;
+            text-shadow: 5px 2px 20px black;
+
+            a{
+                color: white;   
+                text-decoration: none;
+                text-shadow: 10px 6px 20px black;
+
+                // &.active{
+                //     // border: 1px solid gray;
+                //     box-shadow: 0px 0px 20px 3px #49453e;
+                //     padding: 12px 12px;
+                //     border-radius: 5px;
+                //     background: grey;
+                //     opacity: 0.7;
+                // }
+            }
+
+        
+        }
+        
+        .transaction-his{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+            
+            a{
+                color: white;   
+                text-decoration: none;
+                text-shadow: 10px 6px 20px black;
+            &.active{
+                        // border: 1px solid gray;
+                        box-shadow: 0px 0px 20px 3px #49453e;
+                        padding: 12px 12px;
+                        border-radius: 5px;
+                        background: grey;
+                        opacity: 0.7;
+                    }   }
+
+        }
+        
+        .transaction-ongoing{
+            
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        
+        a{
+                color: white;   
+                text-decoration: none;
+                text-shadow: 10px 6px 20px black;
+                &.active{
+                            // border: 1px solid gray;
+                            box-shadow: 0px 0px 20px 3px #49453e;
+                            padding: 12px 12px;
+                            border-radius: 5px;
+                            background: grey;
+                            opacity: 0.7;
+                        }   }}
+
+        
+        .invitation{
+            
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        
+        a{
+                color: white;   
+                text-decoration: none;
+                text-shadow: 10px 6px 20px black;
+                &.active{
+                            // border: 1px solid gray;
+                            box-shadow: 0px 0px 20px 3px #49453e;
+                            padding: 12px 12px;
+                            border-radius: 5px;
+                            background: grey;
+                            opacity: 0.7;
+                        }   }}
+
+        
+        .user-icon{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .content-container{
+        top: 111px;
+        height: 16vh;
+        text-align: justify;
+        position: relative;
+        width: 75%;
+        margin: auto;
+        padding: 13px 0px;
+        display: flex;
+        font-weight: 600;
+        /* margin: auto; */
+        text-shadow: 2px 2px 20px black;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 34px;
+    }
+
+    
+
+}
+

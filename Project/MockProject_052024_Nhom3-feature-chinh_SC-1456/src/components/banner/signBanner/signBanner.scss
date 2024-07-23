@@ -1,0 +1,41 @@
+@import "../../../styles/breakpoints.scss";
+
+.header-background {
+    &_overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+        transition: opacity 0.5s ease;
+    }
+
+    &_text {
+        color: var(--bs-white);
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include lg {
+            font-size: 1.5rem;
+        }
+
+        @include md {
+            font-size: 1rem;
+        }
+    }
+
+    &_img {
+        @include sm {
+            min-height: 308px;
+            object-fit: cover;
+        }
+
+
+    }
+}

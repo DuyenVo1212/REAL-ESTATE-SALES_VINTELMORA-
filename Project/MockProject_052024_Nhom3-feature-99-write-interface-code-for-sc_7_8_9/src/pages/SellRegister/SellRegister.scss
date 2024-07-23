@@ -1,0 +1,90 @@
+.sell-register {
+  background-color: var(--gray-100);
+  padding: 72px var(--screen-spacer);
+
+  &__form {
+    background-color: var(--gray-200);
+    padding: 72px var(--screen-spacer);
+
+    &--title {
+      text-transform: capitalize;
+      font-size: 4rem;
+      color: var(--black);
+      border-bottom: 1px solid var(--gray-300);
+      padding-bottom: 18px;
+    }
+
+    &--wrapper {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    & > &--submit {
+      background-color: var(--blue-500);
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    &__form {
+      &--title {
+        font-size: 4.4rem;
+        margin-bottom: 32px;
+      }
+
+      &--wrapper {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &__form {
+      &--title {
+        font-size: 4.8rem;
+        margin-bottom: var(--screen-spacer);
+      }
+
+      &--wrapper {
+        padding-top: var(--screen-spacer);
+        padding-bottom: var(--screen-spacer);
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &__form {
+      &--title {
+        font-size: 5.2rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1536px) {
+    &__form {
+      &--title {
+        font-size: 5.4rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    &__form {
+      &--title {
+        font-size: 5.6rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1680px) {
+    &__form {
+      &--title {
+        font-size: 5.8rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    &__form {
+      &--title {
+        font-size: 6rem;
+      }
+    }
+  }
+}

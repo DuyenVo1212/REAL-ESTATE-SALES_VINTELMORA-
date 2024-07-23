@@ -1,0 +1,148 @@
+.form {
+  &--group + &--group {
+    margin-top: 18px;
+  }
+
+  &--group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &--group.form--column {
+    flex-direction: column;
+  }
+
+  &--label {
+    width: 100%;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &--input-group {
+    flex-grow: 1;
+  }
+
+  &--control {
+    width: 100%;
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 22px 32px;
+    border-radius: 8px;
+  }
+
+  &--error {
+    color: #b80f0a;
+    text-align: right;
+    font-size: 1.6rem;
+    margin-top: 8px;
+  }
+
+  @media screen and (min-width: 640px) {
+    &--group + &--group {
+      margin-top: 32px;
+    }
+
+    &--label,
+    &--control {
+      font-size: 2.9rem;
+    }
+
+    &--error {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &--group + &--group {
+      margin-top: calc(var(--screen-spacer) - 14px);
+    }
+
+    &--label,
+    &--control {
+      font-size: 3.3rem;
+    }
+
+    &--error {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &--group + &--group {
+      margin-top: var(--screen-spacer);
+    }
+
+    &--group {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--label,
+    &--control {
+      font-size: 3.5rem;
+    }
+
+    &--label {
+      max-width: 43%;
+      margin-right: var(--screen-spacer);
+    }
+
+    &--error {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    &--label,
+    &--control {
+      font-size: 3.7rem;
+    }
+
+    &--label {
+      max-width: 37%;
+    }
+
+    &--error {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    &--label,
+    &--control {
+      font-size: 3.9rem;
+    }
+
+    &--error {
+      font-size: 2.6rem;
+    }
+  }
+
+  @media screen and (min-width: 1680px) {
+    &--label,
+    &--control {
+      font-size: 4.1rem;
+    }
+
+    &--error {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    &--label,
+    &--control {
+      font-size: 4.3rem;
+    }
+
+    &--label {
+      max-width: 33%;
+    }
+
+    &--error {
+      font-size: 3rem;
+    }
+  }
+}

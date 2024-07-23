@@ -1,0 +1,79 @@
+// Import normalize.css to reset CSS
+@import 'normalize.css';
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  // Colors
+  --primary: #3f78e5;
+  // --secondary: ;
+  --black: #000;
+  --white: #fff;
+
+  --gray-100: #f3f4f6;
+  --gray-200: #ebebeb;
+  --gray-300: #d9d9d9;
+
+  --blue-500: #052659;
+  --blue-600: #021024;
+
+  // Common
+  --font-family: 'Nunito Sans', sans-serif;
+  --scree-size: 1920px;
+  --screen-spacer: 8px;
+
+  // Header
+  --header-height: 140px;
+
+  @media screen and (min-width: 640px) {
+    --screen-spacer: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    --screen-spacer: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --screen-spacer: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --screen-spacer: 58px;
+  }
+
+  @media screen and (min-width: 1536px) {
+    --screen-spacer: 62px;
+  }
+}
+
+// CSS reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Setting the font size
+html {
+  font-size: 62.5%;
+}
+
+// Common properties
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--black);
+  overflow-y: overlay;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+a[href] {
+  text-decoration: none;
+}

@@ -1,0 +1,111 @@
+.login {
+
+  .login-container {
+
+    a {
+      color: #0738CD;
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .role-switch {
+      margin-left: 5rem;
+
+      button {
+        background: none;
+        border: none;
+        color: #ccc;
+        position: relative;
+
+        &:hover,
+        &:focus {
+          outline: none;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 0.1rem;
+          background: #ccc;
+          position: absolute;
+          bottom: -0.25rem;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        &:hover::after,
+        &:focus::after,
+        &:disabled::after {
+          opacity: 1;
+        }
+
+        &:disabled {
+          color: #0738CD;
+          cursor: not-allowed;
+
+          &::after {
+            background: #0738CD;
+          }
+        }
+      }
+    }
+
+    .form-login {
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .form-options {
+
+        .form-forgot-password {
+          color: #0738CD;
+          text-decoration: none;
+          font-size: 0.9rem;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .form-group {
+
+        label {
+          display: block;
+          margin-bottom: 0.4rem;
+          font-weight: bold;
+        }
+      }
+
+      button[type='submit'] {
+        background-color: #030772;
+        color: white;
+      }
+    }
+
+    .login-img-customer {
+      img {
+        max-height: 24rem;
+        max-width: 100%;
+      }
+    }
+
+    .login-img-agent {
+      img {
+        max-height: 26rem;
+        max-width: 100%;
+      }
+    }
+
+  }
+
+}

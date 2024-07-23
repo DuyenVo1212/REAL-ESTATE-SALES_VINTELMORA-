@@ -1,0 +1,53 @@
+@import "../../../styles/breakpoints.scss";
+
+
+.header-background {
+    &_home {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    }
+
+    &_text {
+        width: 100%;
+
+        h1 {
+            font-size: 4rem;
+            width: 100%;
+
+            @include lg {
+                font-size: 2.2rem;
+            }
+
+            @include md {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &_searchbar {
+        margin: auto;
+        margin-top: 6rem;
+
+        a:hover {
+            color: #0738CD;
+        }
+
+        @include lg {
+            margin-top: 2rem;
+        }
+
+        @include md {
+            margin-top: 1rem;
+        }
+    }
+
+    &_searchbtn {
+        button {
+            background-color: #030772;
+            color: var(--bs-white);
+        }
+
+        button:hover {
+            background-color: #030772;
+        }
+    }
+}

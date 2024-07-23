@@ -1,0 +1,1 @@
+Thư mục chứa các thành phần React tái sử dụng (ví dụ: Header, Footer)

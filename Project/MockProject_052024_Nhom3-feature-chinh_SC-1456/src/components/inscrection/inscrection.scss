@@ -1,0 +1,21 @@
+@import "../../styles/breakpoints.scss";
+
+.inscrection {
+
+    &-content {
+        &_title {
+            color: #052659;
+            text-align: center;
+        }
+
+        &_heading {
+            font-size: 3.5rem;
+        }
+
+        &_img {
+            @include lg {
+                margin: auto;
+            }
+        }
+    }
+}

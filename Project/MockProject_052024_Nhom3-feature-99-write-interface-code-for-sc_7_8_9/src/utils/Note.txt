@@ -1,0 +1,1 @@
+Thư mục chứa các tiện ích và công cụ hỗ trợ cho ứng dụng, ví dụ như các hàm tiện ích, các phương thức xử lý dữ liệu chung
